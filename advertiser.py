@@ -9,6 +9,9 @@ class Advertiser(BaseAdvertising):
 
     def __init__(self, object_id, name):
         super().__init__(object_id)
+        for advertiser in self.list:
+            if advertiser.object_id == object_id:
+                raise Exception("There is an advertiser with this id!")
         self.name = name
         self.list.append(self)
 
