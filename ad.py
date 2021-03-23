@@ -9,3 +9,7 @@ class Ad(BaseAdvertising):
         self.img_url = img_url
         self.link = link
         self.advertiser = advertiser
+
+    @staticmethod
+    def describe_me():
+        return 'Something'
