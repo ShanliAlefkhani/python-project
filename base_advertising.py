@@ -1,10 +1,9 @@
 class BaseAdvertising:
 
-    clicks = 0
-    views = 0
-
     def __init__(self, object_id):
         self.object_id = object_id
+        self.clicks = 0
+        self.views = 0
 
     @staticmethod
     def describe_me():
