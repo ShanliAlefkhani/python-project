@@ -3,7 +3,6 @@ from base_advertising import BaseAdvertising
 
 class Advertiser(BaseAdvertising):
 
-    total_clicks = 0
     list = []
 
     def __init__(self, object_id, name):
@@ -13,6 +12,7 @@ class Advertiser(BaseAdvertising):
                 raise Exception("There is an advertiser with this id!")
         self.name = name
         self.list.append(self)
+        self.total_clicks = 0
         self.ads = []
 
     @staticmethod
