@@ -5,7 +5,6 @@ class Advertiser(BaseAdvertising):
 
     total_clicks = 0
     list = []
-    ads = []
 
     def __init__(self, object_id, name):
         super().__init__(object_id)
@@ -14,6 +13,7 @@ class Advertiser(BaseAdvertising):
                 raise Exception("There is an advertiser with this id!")
         self.name = name
         self.list.append(self)
+        self.ads = []
 
     @staticmethod
     def help():
