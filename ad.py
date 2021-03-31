@@ -14,7 +14,7 @@ class Ad(BaseAdvertising):
         self.img_url = img_url
         self.link = link
         self.advertiser = advertiser
-        self.list.append(self)
+        Ad.list.append(self)
         advertiser.add_ad(self)
 
     @staticmethod
