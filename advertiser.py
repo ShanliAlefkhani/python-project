@@ -17,7 +17,7 @@ class Advertiser(BaseAdvertising):
 
     @staticmethod
     def help():
-        return 'Something'
+        return 'Advertiser Class Fields:\n• id\n• name\n• clicks\n• views\n'
 
     @staticmethod
     def describe_me():
